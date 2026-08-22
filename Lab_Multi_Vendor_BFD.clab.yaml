@@ -1,7 +1,7 @@
 name: BFD
 topology:
   nodes:
-    cisco:
+    R1:
       kind: cisco_xrd
       image: sbezverk/xrd-control-plane:25.2.1
       startup-config: cisco_xrd.cfg
