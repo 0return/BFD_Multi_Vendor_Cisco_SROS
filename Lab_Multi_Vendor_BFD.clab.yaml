@@ -1,0 +1,10 @@
+name: BFD
+topology:
+  nodes:
+    cisco:
+      kind: cisco_xrd
+      image: sbezverk/xrd-control-plane:25.2.1
+      startup-config: cisco_xrd.cfg
+
+  links:
+#    - endpoints: ["nokia:1/1/1", "cisco:Gi0-0-0-0"]
