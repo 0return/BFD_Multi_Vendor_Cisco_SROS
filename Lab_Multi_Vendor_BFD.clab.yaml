@@ -1,10 +1,17 @@
 name: BFD
 topology:
+  kinds:
+    nokia_srsim:
+      license: /home/clab/Licenses/SR_SIM25_1.txt
+      image: localhost/nokia/srsim:25.10.R2
+    cisco_xrd:
+      image: sbezverk/xrd-control-plane:25.2.1
+      startup-config: cisco_xrd.cfg
   nodes:
     R1:
       kind: cisco_xrd
-      image: sbezverk/xrd-control-plane:25.2.1
-      startup-config: cisco_xrd.cfg
-
+    R2:
+      kind: nokia_srsim
+      type: sr-1
   links:
-#    - endpoints: ["nokia:1/1/1", "cisco:Gi0-0-0-0"]
+    - endpoints: [R2:1/1/c1/1, R1:Gi0-0-0-0]
