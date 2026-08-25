@@ -42,6 +42,16 @@ clab deploy
 Topology:
 
 
+                                                   BFD over Bundle Per-Member Link
+
+
+The Cisco mode uses CDP MAC whereas IETF mode uses IANA assigned MAC.
+
+Cisco BFD over Bundle sessions use destination UDP port: 3784, while IETF BFD over Bundle sessions use destination UDP port: 6784.
+
+
+
+
 
 
 
