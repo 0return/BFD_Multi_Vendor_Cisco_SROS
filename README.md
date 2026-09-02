@@ -34,8 +34,8 @@ setting the limits high (e.g. 64000, or higher).
 Fix: run the following commands:
 
 sudo sysctl -w fs.inotify.max_user_instances=64000
-clab destroy 
-clab deploy
+
+then, you must re-deploy your lab
 
 
 
